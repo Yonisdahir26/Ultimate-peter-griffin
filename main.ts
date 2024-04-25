@@ -1,11 +1,11 @@
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
-    mySprite.y += -20
+    mySprite.y += -30
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     mySprite.y += -20
 })
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
-    mySprite.setVelocity(-50, 0)
+    mySprite.setVelocity(-51, 0)
 })
 controller.right.onEvent(ControllerButtonEvent.Released, function () {
     mySprite.setVelocity(0, 0)
@@ -14,7 +14,7 @@ controller.left.onEvent(ControllerButtonEvent.Released, function () {
     mySprite.setVelocity(0, 0)
 })
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
-    mySprite.setVelocity(50, 0)
+    mySprite.setVelocity(48, 0)
 })
 let mySprite: Sprite = null
 mySprite = sprites.create(img`
@@ -24,17 +24,17 @@ mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
-    . . . . . . 7 7 7 7 . . . . . . 
-    . . . . . . 7 7 7 7 . . . . . . 
-    . . . . . . 7 7 7 7 . . . . . . 
-    . . . . . . 7 7 7 7 . . . . . . 
-    . . . . . . 7 7 7 7 . . . . . . 
-    . . . . . . 7 7 7 7 . . . . . . 
+    . . . . . . 3 3 3 3 . . . . . . 
+    . . . . . . 3 3 3 3 . . . . . . 
+    . . . . . . 3 3 3 3 . . . . . . 
+    . . . . . . 3 3 3 3 . . . . . . 
+    . . . . . . 3 3 3 3 . . . . . . 
+    . . . . . . 3 3 3 3 . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player)
-mySprite.ay = 100
+mySprite.ay = 110
 tiles.setCurrentTilemap(tilemap`level2`)
 scene.cameraFollowSprite(mySprite)

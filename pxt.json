@@ -2,7 +2,9 @@
     "name": "peter griffin",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "animation": "*",
+        "multiplayer": "*"
     },
     "files": [
         "main.blocks",
