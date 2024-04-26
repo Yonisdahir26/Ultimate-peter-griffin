@@ -38,3 +38,5 @@ mySprite = sprites.create(img`
 mySprite.ay = 110
 tiles.setCurrentTilemap(tilemap`level2`)
 scene.cameraFollowSprite(mySprite)
+tiles.setCurrentTilemap(tilemap`level0`)
+tiles.setCurrentTilemap(tilemap`level2`)
